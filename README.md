@@ -1,24 +1,15 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Prueba Técnica para Programador JR Rankmi
 
-Things you may want to cover:
+* Requiere una versión de Ruby igual o mayor que 2.3.1
 
-* Ruby version
+* La aplicación usa Rails versión 5.2.2
 
-* System dependencies
+* Las credenciales para la base de datos deben ser modificadas en el archivo .env
 
-* Configuration
+* Luego de crear la base de datos, requiere realizar migración y carga de seed.
 
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+* Credencial de usuario precargado:
+** Email: cgallardo.random@gmail.com
+** Contraseña: Request.system.32
