@@ -1,0 +1,20 @@
+default: &default
+  adapter: postgresql
+  encoding: unicode
+  username: admin
+  password: 123456
+  pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
+
+development:
+  <<: *default
+  database: onboard_feedback_development
+
+test:
+  <<: *default
+  database: onboard_feedback_test
+
+production:
+  <<: *default
+  database: onboard_feedback_production
+  username: onboard_feedback
+  password: <%= ENV['ONBOARD_FEEDBACK_DATABASE_PASSWORD'] %>

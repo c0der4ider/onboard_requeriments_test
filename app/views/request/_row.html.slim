@@ -1,0 +1,9 @@
+.row.border-bottom style=("margin-top: 30px;")
+  .col-sm-1.text-cente id="vote_section_#{request.id}"
+    = render partial: 'request/vote', locals: { request: request }
+  .col-sm-10
+    h3 style="margin-top: 10px;"
+      b = request.title
+      |&nbsp;&nbsp;
+      small = "por #{request.user.name}"
+    = (request.description).html_safe

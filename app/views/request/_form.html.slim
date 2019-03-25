@@ -1,0 +1,13 @@
+.row
+  .col-sm-12
+    .card.card-info
+      .card-header.bg-info.mb-3.text-white
+        | Nuevo Requerimiento
+      .card-body
+        = form_for Request.new(), url: requests_path, remote: true do |f|
+          .form-group
+            = f.text_field :title, class: 'form-control', placeholder: 'Titulo'
+          .form-group
+            = f.text_area :description, class: 'form-control', placeholder: 'Descripción'
+          .form-group
+            = f.submit 'Publicar', class: "float-right btn btn-info"

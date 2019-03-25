@@ -1,0 +1,12 @@
+.row style=("margin-top: 50px;")
+  .col-sm-12
+    .d-flex.justify-content-between.flex-wrap.flex-md-nowrap.align-items-center.pb-2.mb-3.border-bottom
+      h3 Requerimientos
+  .col-sm-12
+    .row
+      .col-sm-6.float-right.form-inline style="margin-bottom: 30px;"
+        = label_tag "Ordenar por:"
+        |&nbsp;&nbsp;&nbsp;
+        = select_tag "order", options_for_select([["Votos", "votes"], ["Alfabetico", "alphabetic"]]), { class: "form-control", include_blank: "Seleccionar orden..."}
+    #list_row
+      = render partial: 'request/lists'

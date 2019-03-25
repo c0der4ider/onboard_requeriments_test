@@ -1,0 +1,10 @@
+h3.text-center
+  - if logged_in?
+    a href="#" class="vote" data-request-id="#{request.id}" data-vote-action="up"
+      i.fas.fa-caret-up
+  br
+  = request.get_points
+  br
+  - if logged_in?
+    a href="#" class="vote" data-request-id="#{request.id}" data-vote-action="down"
+      i.fas.fa-caret-down

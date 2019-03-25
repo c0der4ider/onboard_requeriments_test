@@ -1,0 +1,6 @@
+- if logged_in?
+  = render partial: 'request/form'
+= render partial: 'request/requests'
+
+javascript:
+  $(function(){Home.init('index');});

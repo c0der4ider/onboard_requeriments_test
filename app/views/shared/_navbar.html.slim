@@ -1,0 +1,15 @@
+nav.navbar.navbar-expand-lg.navbar-dark.bg-primary.fixed-top
+  .container
+    = link_to root_path, class: "navbar-brand" do
+      | Feedbacks
+    button.navbar-toggler aria-controls="navbarText" aria-expanded="false" aria-label=("Toggle navigation") data-target="#navbarText" data-toggle="collapse" type="button"
+      span.navbar-toggler-icon
+    #navbarText.collapse.navbar-collapse
+      ul.navbar-nav.mr-auto
+      span.navbar-text
+        - if logged_in?
+          = "¡Bienvenido #{current_user.name}!"
+          |&nbsp;&nbsp;&nbsp;
+          = link_to "Cerrar Sesión <i class='fas fa-sign-out-alt'></i>".html_safe, logout_path
+        - else
+          = link_to "Ingresar con Google <i class='fab fa-google'></i>".html_safe, login_path

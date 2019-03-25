@@ -1,0 +1,68 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 70%;
+}
+
+body {
+  font-size: 14px;
+  font-size: 1.4rem;
+  margin-top: 80px;
+}
+
+h1 {
+  font-size: 24px;
+  font-size: 2.4rem;
+}
+
+i {
+  width: 26px;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a:hover,
+a:active,
+a:link,
+a:visited {
+  text-decoration: none;
+}
+
+.form-group label {
+  display: none;
+}
+
+.navbar-default,
+.navbar-toggle:focus,
+.collapsed,
+button.navbar-toggle {
+  border: none;
+
+  a {
+    color: rgb(46, 46, 46) !important;
+  }
+}
+
+nav {
+  .navbar-header {
+    width: 100%;
+
+    button,
+    .navbar-brand {
+      transition: opacity 0.15s;
+    }
+
+    button {
+      margin-right: 0;
+    }
+
+    button:hover,
+    .navbar-brand:hover {
+      opacity: 0.8;
+    }
+  }
+}

@@ -1,0 +1,6 @@
+- if @requests.present?
+  - @requests.each do |request|
+    = render partial: 'request/row', locals: { request: request }
+- else
+  .col-sm-12.text-center
+    h3 No existen requerimientos.
