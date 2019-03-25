@@ -10,6 +10,7 @@ Prueba Técnica para Programador JR Rankmi
 
 * Luego de crear la base de datos, requiere realizar migración y carga de seed.
 
-* Credencial de usuario precargado:
-** Email: cgallardo.random@gmail.com
-** Contraseña: Request.system.32
+Credencial de usuario precargado:
+
+Email: cgallardo.random@gmail.com
+Contraseña: Request.system.32
